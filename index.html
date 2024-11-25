@@ -1,60 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cook Book</title>
-    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/nL0Tj07Z/bitmap.png">
-    
-    <!-- Embedded CSS -->
+    <title>Cookbook Example</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
     <style>
         body {
-            margin: 0;
-            padding: 20px; /* Add padding to the body for spacing */
-            background-color: blanchedalmond; /* Set a background color */
-            display: flex;
-            flex-direction: column;  /* Stack containers vertically */
-            align-items: center;      /* Center the content horizontally */
+            background-color: #faf3e0; /* Light cream background for a cookbook feel */
+            font-family: 'Georgia', serif; /* Classic serif font */
+            color: #6b4f4f; /* Darker color for the text */
         }
 
         .container {
-            display: flex;           /* Use Flexbox for horizontal alignment */
-            align-items: center;     /* Center content vertically */
-            margin: 20px 0;          /* Add vertical margin to separate the containers */
-            background-color: #fff;  /* Optional: add a background color to the container */
-            padding: 10px;           /* Optional: add padding inside the container */
-            border-radius: 8px;      /* Optional: rounded corners */
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
-            width: 700px;            /* Set a fixed or min-width for consistent look */
-            min-height: 200px;       /* Set a min-height to avoid overflow */
-            gap: 20px;               /* Space between image and text */
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            max-width: 800px;
         }
 
-        .image {
-            width: 200px;            /* Adjust image width as needed */
-            height: auto;            /* Maintain aspect ratio */
+        .recipe-title {
+            font-family: 'Playfair Display', serif; /* Elegant title font */
+            font-size: 2.5rem;
+            margin-bottom: 20px;
         }
 
-        .text {
-            font-family: "Courier New", monospace; /* Change font to Courier New */
-            font-size: 20px;       /* Set font size */
-            font-weight: bold;     /* Make text bold */
-            text-align: center;    /* Center-align the text itself */
-            flex: 1;               /* Make text take available space */
+        .btn-primary {
+            background-color: #8b5e34;
+            border-color: #8b5e34;
+        }
+
+        .btn-primary:hover {
+            background-color: #a0683c;
+            border-color: #a0683c;
+        }
+
+        .ingredients,
+        .instructions {
+            margin-bottom: 30px;
+        }
+
+        .ingredients ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients li {
+            background: #f9f0d1;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .instructions p {
+            line-height: 1.8;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #8b5e34;
         }
     </style>
 </head>
+
 <body>
-
     <div class="container">
-        <p class="text">WELCOME TO THE RECIPE REALM 🗣🗣🗣🗣🗣🗣</p>
-        <img src="https://i.postimg.cc/Gm3gjxVV/reciperealm.png" alt="Image" class="image">
+        <div class="header">
+            <h1 class="recipe-title">Delicious Chocolate Cake</h1>
+            <p class="lead">A classic recipe that everyone loves!</p>
+        </div>
+
+        <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>2 cups of flour</li>
+                <li>1 cup of sugar</li>
+                <li>1/2 cup of cocoa powder</li>
+                <li>1 tsp baking powder</li>
+                <li>1/2 tsp salt</li>
+                <li>3/4 cup of melted butter</li>
+                <li>2 large eggs</li>
+                <li>1 tsp vanilla extract</li>
+                <li>1 cup of milk</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h3>Instructions</h3>
+            <p>
+                1. Preheat the oven to 350°F (175°C). Grease and flour a 9x9 inch pan.<br>
+                2. In a large bowl, whisk together the flour, sugar, cocoa powder, baking powder, and salt.<br>
+                3. Add the melted butter, eggs, and vanilla extract. Mix until smooth.<br>
+                4. Gradually add the milk and mix until the batter is well combined.<br>
+                5. Pour the batter into the prepared pan and bake for 30-35 minutes, or until a toothpick inserted in the center comes out clean.<br>
+                6. Let the cake cool before slicing. Serve with a sprinkle of powdered sugar or frosting of choice.
+            </p>
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-primary mt-3">Print Recipe</button>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 Recipe Realm | All Rights Reserved</p>
+        </div>
     </div>
 
-    <div class="container">
-        <p class="text">IDK RANDOM GO 🗣🗣🗣🗣🗣🗣</p>
-        <img src="https://i.postimg.cc/1z3tP2TB/Whats-App-Image-2024-11-24-at-23-33-50-9aecaed7.jpg" alt="Image" class="image">
-    </div>
-    
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
