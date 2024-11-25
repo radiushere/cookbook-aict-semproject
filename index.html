@@ -20,18 +20,17 @@
         .container {
             display: flex;           /* Use Flexbox for horizontal alignment */
             align-items: center;     /* Center content vertically */
-            justify-content: center; /* Center content horizontally */
             margin: 20px 0;          /* Add vertical margin to separate the containers */
             background-color: #fff;  /* Optional: add a background color to the container */
             padding: 10px;           /* Optional: add padding inside the container */
             border-radius: 8px;      /* Optional: rounded corners */
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
-            width: 700px;            /* Fixed width for all containers */
-            height: 200px;           /* Fixed height for all containers */
+            width: 700px;            /* Set a fixed or min-width for consistent look */
+            min-height: 200px;       /* Set a min-height to avoid overflow */
+            gap: 20px;               /* Space between image and text */
         }
 
         .image {
-            margin-right: 20px;      /* Space between the image and text */
             width: 200px;            /* Adjust image width as needed */
             height: auto;            /* Maintain aspect ratio */
         }
@@ -41,7 +40,7 @@
             font-size: 20px;       /* Set font size */
             font-weight: bold;     /* Make text bold */
             text-align: center;    /* Center-align the text itself */
-            flex: 1;               /* Ensure text takes remaining space */
+            flex: 1;               /* Make text take available space */
         }
     </style>
 </head>
@@ -49,12 +48,12 @@
 
     <div class="container">
         <p class="text">WELCOME TO THE RECIPE REALM 🗣🗣🗣🗣🗣🗣</p>
-        <img class="image" src='https://i.postimg.cc/Gm3gjxVV/reciperealm.png' border='0' alt="Image" class="image"/>
+        <img src="https://i.postimg.cc/Gm3gjxVV/reciperealm.png" alt="Image" class="image">
     </div>
 
     <div class="container">
         <p class="text">IDK RANDOM GO 🗣🗣🗣🗣🗣🗣</p>
-        <img class="image" src='https://i.postimg.cc/1z3tP2TB/Whats-App-Image-2024-11-24-at-23-33-50-9aecaed7.jpg' border='0' alt='Image' class="image"/>
+        <img src="https://i.postimg.cc/1z3tP2TB/Whats-App-Image-2024-11-24-at-23-33-50-9aecaed7.jpg" alt="Image" class="image">
     </div>
     
 </body>
