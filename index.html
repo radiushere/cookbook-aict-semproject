@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Realm</title>
+    <title>RecipeRealm</title>
     <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/nL0Tj07Z/bitmap.png">
     <!-- Include Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -96,6 +96,15 @@
             color: #8b5e34;
         }
 
+        .container-self {
+            text-align: left;
+            margin-top: auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
         .content-section {
             display: none;
             /* Hide all sections initially */
@@ -110,8 +119,8 @@
 
 <body>
 
-    <div class="navbar navbar-default ">
-        <ul class="nav nav-pills mb-3">
+    <div class="navbar navbar-expand-sm bg-white navbar-light justify-content-center">
+        <ul class="nav nav-pills mb-3 navbar-nav">
             <li class="nav-item ">
                 <button type="button" class="nav-link btn" href="#home" onclick="showPage('home')">Home</button>
             </li>
