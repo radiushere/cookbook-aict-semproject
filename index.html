@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEST CookBook</title>
+    <title>Recipe Realm</title>
     <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/nL0Tj07Z/bitmap.png">
     <!-- Include Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -110,7 +110,7 @@
 
 <body>
 
-    <div class="container">
+    <div class="navbar navbar-default ">
         <ul class="nav nav-pills mb-3">
             <li class="nav-item ">
                 <button type="button" class="nav-link btn" href="#home" onclick="showPage('home')">Home</button>
@@ -139,17 +139,18 @@
             </div>
 
             <div class="ingredients">
-                <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                                aria-controls="panelsStayOpen-collapseOne">
-                                Instructions
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Ingredients
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                            <div class="accordian-body">
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
                                 <ul>
                                     <li>2 cups of flour</li>
                                     <li>1 cup of sugar</li>
@@ -163,6 +164,7 @@
                                 </ul>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -170,17 +172,18 @@
 
 
             <div class="instructions">
-                <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
-                                aria-controls="panelsStayOpen-collapseTwo">
-                                Ingredients
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Instructions
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
-                            <div class="accordian-body ingredients">
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
                                 <p>
                                     1. Preheat the oven to 350°F (175°C). Grease and flour a 9x9 inch pan.<br>
                                     2. In a large bowl, whisk together the flour, sugar, cocoa powder, baking powder,
@@ -198,6 +201,7 @@
                                 </p>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
