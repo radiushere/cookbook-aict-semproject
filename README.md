@@ -9,7 +9,8 @@
   <br>
   I have deployed my project on vercel.
   <br>
-  The link to the deployed site:
+  The link to the deployed site is <a href="https://cookbook-aict-semproject.vercel.app/" style="padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; display: inline-block;">
+    here!
+</a>
 </p>
 
-<button type="button" src="https://cookbook-aict-semproject.vercel.app/"></button>
