@@ -12,4 +12,4 @@
   The link to the deployed site:
 </p>
 
-<button type="button" src="https://cookbook-aict-semproject.vercel.app/" />
+<button type="button" src="https://cookbook-aict-semproject.vercel.app/"></button>
