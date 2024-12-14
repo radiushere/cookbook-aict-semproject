@@ -1,11 +1,11 @@
 <h1>
-  The source code of my 1st semester project for AICT.
+  The source code of a test project for a static website, in development.
 </h1>
 
 <hr>
 
 <p>
-  The project goal was to make a static website using HTML, CSS, Java Script and BootStrap.
+  My goal was to make a static website using HTML, CSS, Java Script and BootStrap.
   <br>
   I have deployed my project on vercel.
   <br>
